@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from app.forms import LoginForm
 
 @app.route('/')
 @app.route('/index')
@@ -19,3 +20,8 @@ def index():
     return render_template('index.html', title='Home', user=user, posts=posts)
 
 # render_template()" é uma função built-in do Flask que invoca o Jinja2
+
+@app.route('/login')
+def login():
+    form = LoginForm()
+    return render_template('login.html', title='Sign In', form=form)
