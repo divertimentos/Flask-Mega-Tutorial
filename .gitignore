@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 .idea/
+=======
+*.pyc
+*__pycache__/
+**.vscode/
+>>>>>>> 19912cd768f3c3331873e1f56f926d007bd97e4c
